@@ -7,8 +7,20 @@
   padding: 10px;
 }
 
+.heading {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+.footing {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
 img {
-	box-shadow: 12px 12px 2px 1px rgba(128, 128, 255, .2);
+	box-shadow: 4px 4px 2px 1px rgba(0, 0, 128, .4);
 }
 
 table {
@@ -17,18 +29,36 @@ table {
 }
 
 td, th {
-  border: 5px solid #dddddd;
   text-align: left;
   padding: 32px;
 }
 
 tr:nth-child(even) {
-  background-color: #EEEEFF;
+  background-color: #C8F5FF;
+}
+
+tr:nth-child(odd) {
+  background-color: #98E5FF;
 }
 </style>
 </head>
 
 <body>
+
+<div class="heading">
+<header>
+	<h1>ingenoire's Symbol Arts</h1>
+	<h2>For use in Phantasy Star Online 2</h2></header>
+	
+	<p>Here's a list of the symbol arts I've ported from images and artworks from the Internet. None of the original artworks are my own (I'm not an artist, I only do ok-ish Pixel Art), I merely did the porting (with some additions to them for SA usage like text). They were mostly for personal use, but I've got a 10 SA limit since I'm poor.<br>
+	I shared these first on my alliance's discord, and they liked them a lot, so I decided to bring it to the public now.<br><br>
+	
+	<b>You can edit these symbol arts with the provided .saml project file using the <a href="https://malulleybovo.github.io/SymbolArtEditorOnline/">online SA editor made by malulleybovo</a>.</b> It's way easier to edit and most of my SAs are categorized in easier to manipulate folders, better than individually editing each symbol through the in-game editor (I don't touch that with a ten foot pole).<br><br>
+	To contact me regarding these symbol arts, please contact me via twitter <a href="https://twitter.com/ingenoire">@ingenoire</a>. If you're the original artist and want the SA taken down/given credit on an artwork I could not find the source, I'll hapilly oblige.</p>
+</div>
+
+
+ 
 <div class="content">
 <table>
   <tr>
@@ -56,7 +86,8 @@ tr:nth-child(even) {
 		<font size="3">&#128209 <a href="symbolarts/changedaworld/project_file.saml" download="w3logo">Project File (.saml)</a></font>
 	</p></td>
     <td>change da world my final message. goodb ye<br>
-	It's on a transparent background and the message can be moved around.</td>
+	It's on a transparent background and the message can be moved around.<br>
+	Might be useful for being KO'ed SAs.</td>
     <td>Internet Meme</td>
   </tr>
   
@@ -148,7 +179,7 @@ tr:nth-child(even) {
     <td><p>
 		<font size="5"><b>&#128189 <a href="symbolarts/femvergil_motivatedA/symbolart_file.sar" download="w3logo">Download A (.sar)</a></b></font><br><br>
 		<font size="5"><b>&#128189 <a href="symbolarts/femvergil_motivatedB/symbolart_file.sar" download="w3logo">Download B (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/femvergil_motivatedA/project_file.saml" download="w3logo">Project File A (.saml)</a></font>
+		<font size="3">&#128209 <a href="symbolarts/femvergil_motivatedA/project_file.saml" download="w3logo">Project File A (.saml)</a></font><br>
 		<font size="3">&#128209 <a href="symbolarts/femvergil_motivatedB/project_file.saml" download="w3logo">Project File B (.saml)</a></font>
 	</p></td>
     <td>Now... I'm motivated!<br>
@@ -188,7 +219,7 @@ tr:nth-child(even) {
 	</p></td>
     <td>I need healing!<br>
 	I need to do a TF2 version but I'm looking for a good, simple and clean art of the Medic. Ain't too fond of Overwatch anymore.</td>
-    <td>I found it on a YT thumbnail.</td>
+    <td>I found it on a YT thumbnail. Help?</td>
   </tr>
   
   <tr>
@@ -334,8 +365,7 @@ tr:nth-child(even) {
 		<font size="3">&#128209 <a href="symbolarts/vmu_corrupted/project_file.saml" download="w3logo">Project File (.saml)</a></font>
 	</p></td>
     <td>Dreamcast Menu Interface (VMU Corrupted)<br>
-	This could probably scare any old PSO1 player. But ingame the text is too blurry. Use this on a Symbol Art Projector in front of a Dreamcast furniture for better results.<br>
-	Working on the Dreamcast UI makes me want to do something similar for my game, but I utterly hate working on UI. It takes forever, especially when you're a pleb who fails to understand how on earth XML could even connect with your game logic and UI and movements... (Yes, I do all my UI in code. Send help.).</td>
+	This could probably scare any old PSO1 player. But ingame the text is too blurry. Use this on a Symbol Art Projector in front of a Dreamcast furniture for better results.</td>
     <td>Dreamcast</td>
   </tr>
   
@@ -352,6 +382,17 @@ tr:nth-child(even) {
   
 </table>
 </div>
+
+
+<div class="footing">
+<footer>
+Sorry, I just learned HTML an hour ago. Don't hate me for the 90s web design. (I actually like the simplicity of it).<br><br>
+Originally, I was going to get this table to parse the list of folders in the git with an SA file, project file, and preview image, but I have no idea how to do that (I think that's a Javascript thing but I'm not touching that for a simple download page).<br><br>
+I am supposed to be working on my video game project, but PSO2 has eaten 80% of my free time. Send help. (I'll admit, it's also kind of related to still learning Heaps.io and struggling to get decent collision detection/resolution set up (right now I'm using BOUNDARY BOXES FOR COLLISIONS, HELP). They have all these colliders and I have no idea how to use them, and the docs aren't helping. Arrrgh!<br>
+Already, I have to scrap chasing enemies on field because I know it'll be a misery to make them chase the player in a 3D platformer world (already in 2D it was pretty bad), but I think taking the Pokemon line of sight starts a battle approach might be a better solution. The enemies that move could be set on a predefined path that can completly avoid having to deal with collisions with world, and it can create a easy to understand ambushing system: touch the foe and you get first strike, if they spot you it's an ambush! See, being bad at programming does have it's benefits!
+</footer>
+</div>
+
 </body>
   
 </html>
