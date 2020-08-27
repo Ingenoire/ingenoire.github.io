@@ -1,6 +1,34 @@
 <html>
 <head>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+body {
+	margin:25px;
+	font-family: 'Barlow';
+	font-size: 22px;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  height: 50%;
+  width: auto;
+}
+
+div.polahead {
+  text-align: center;
+  padding: 1px 16px;
+}
+
+div.polaroidcontainer {
+  text-align: center;
+  padding: 8px 20px;
+}
+
 .content {
   margin: auto;
   width: 70%;
@@ -19,8 +47,36 @@
   padding: 10px;
 }
 
-img {
-	box-shadow: 4px 4px 2px 1px rgba(0, 0, 128, .4);
+.sarbtn {
+  background-color:#306EFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+	font-family: 'Barlow';
+  padding: 18px 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.prjbtn {
+  background-color:#488AC7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 20px 10px;
+	font-family: 'Barlow';
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.sarbtn:hover {
+  background-color:#003CCD;
+}
+
+/* Darker background on mouse-over */
+.prjbtn:hover {
+  background-color:#165895;
 }
 
 table {
@@ -30,401 +86,337 @@ table {
 
 td, th {
   text-align: left;
-  padding: 32px;
+  padding: 14px 18px;
+	font-family: 'Barlow';
 }
 
-tr:nth-child(even) {
-  background-color: #C8F5FF;
+
+.container {
+  position: relative;
+  width: 50%;
 }
 
-tr:nth-child(odd) {
-  background-color: #98E5FF;
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
+
 </style>
 </head>
 
 <body>
 
 <div class="heading">
-<header>
-	<h1>ingenoire's Symbol Arts</h1>
-	<h2>For use in Phantasy Star Online 2</h2></header>
-	
-	<p>Here's a list of the symbol arts I've ported from images and artworks from the Internet. None of the original artworks are my own (I'm not an artist, I only do ok-ish Pixel Art), I merely did the porting (with some additions to them for SA usage like text). They were mostly for personal use, but I've got a 10 SA limit since I'm poor.<br>
-	I shared these first on my alliance's discord, and they liked them a lot, so I decided to bring it to the public now.<br><br>
-	
-	<b>You can edit these symbol arts with the provided .saml project file using the <a href="https://malulleybovo.github.io/SymbolArtEditorOnline/">online SA editor made by malulleybovo</a>.</b> It's way easier to edit and most of my SAs are categorized in easier to manipulate folders, better than individually editing each symbol through the in-game editor (I don't touch that with a ten foot pole).<br><br>
-	To contact me regarding these symbol arts, please contact me via twitter <a href="https://twitter.com/ingenoire">@ingenoire</a>. If you're the original artist and want the SA taken down/given credit on an artwork I could not find the source, I'll hapilly oblige.</p>
+	<h1>ingenoire's PSO2 Symbol Arts</h1>
+	<p>
+	I ported these Symbol Arts from the the world of imagery into the world of shapes, and even offer you the source file for easier editing using <a href="https://malulleybovo.github.io/SymbolArtEditorOnline/">this online symbol art editor.</a><br>
+	<br>
+	To install, simply drop the .SAR file into your Documents\SEGA\PHANTASYSTARONLINE2_NA_STEAM\symbolarts\import, then open PSO2, go to Symbol Arts, set the current tab to Import, and press Import. Your SA should appear in it. Press save and override a slot of your SA palette, and you should be able to use it.
+	<br>
+	<br>
+	If you need to contact me regarding these SA, contact me on twitter <a href="https://twitter.com/ingenoire">@ingenoire</a>.</p>
 </div>
-
-
  
 <div class="content">
 <table>
+  
   <tr>
-    <th>Symbol Art</th>
-    <th>Downloads</th>
-    <th>Description</th>
-    <th>Original Art by</th>
+    <td><img src="symbolarts/silence_brand/silence_brand.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>silence, brand</h2>
+	<p>Original Artwork by the Internet.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/silence_brand/silence_brand.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/silence_brand/silence_brand.saml" download="no_free_will">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/silence_brand/silence_brand.png" class="img-responsive" width="100%" alt=""><br><br>
-	<img src="symbolarts/silence_brand/silence_bot.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/silence_brand/silence_brand.sar" download="silence_brand">Download A (.sar)</a></b></font><br><br>
-		<font size="5"><b>&#128189 <a href="symbolarts/silence_brand/silence_bot.sar" download="silence_brand">Download B (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/silence_brand/silence_brand.saml" download="silence_brand">Project File A (.saml)</a></font><br>
-		<font size="3">&#128209 <a href="symbolarts/silence_brand/silence_bot.saml" download="silence_brand">Project File B (.saml)</a></font>
-	</p></td>
-    <td>silence, brand<br>
-	Finally a weapon against the bots.</td>
-    <td>The Internet</td>
+    <td><img src="symbolarts/serena_hiya/serena_hiya.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Serena says hello in french</h2>
+	<p>Original artwork by <a href="https://danbooru.donmai.us/posts/1507411">shuri</a> (only link I found was danbooru, any help?)</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/serena_hiya/serena_hiya.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/serena_hiya/serena_hiya.saml" download="serena_hiya">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/no_free_will/no_free_will.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/no_free_will/no_free_will.sar" download="no_free_will">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/no_free_will/no_free_will.saml" download="no_free_will">Project File (.saml)</a></font>
-	</p></td>
-    <td>Ask yourself, are you qualified to have free will?<br>
-	It's a line from Metal Gear Solid 2. It's near at the end of the game, so spoilers if you search it up.</td>
-    <td>Metal Gear Solid 2</td>
+    <td><img src="symbolarts/pecorine_nice/pecorine_nice.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Pecorine: "Nice!"</h2>
+	<p>Original artwork by <a href="https://www.pixiv.net/en/artworks/82820742">gamuo</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/pecorine_nice/pecorine_nice.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/pecorine_nice/pecorine_nice.saml" download="pecorine_nice">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/chargemanken_aeugh/chargemanken_aeugh.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/chargemanken_aeugh/chargemanken_aeugh.sar" download="chargemanken_aeugh">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/chargemanken_aeugh/chargemanken_aeugh.saml" download="chargemanken_aeugh">Project File (.saml)</a></font>
-	</p></td>
-    <td>Chargeman Ken is finally taken down. Aeugh.<br>
-	Who is he? I think this review of the show by kenny lauderdale is the best summary there is. He makes great reviews of the old school anime, so check him out! (Link in the source)</td>
-    <td><a href="https://www.youtube.com/watch?v=uczvIKDcnS4">Chargeman Ken</a></td>
+    <td><img src="symbolarts/palutena_pout/palutena_pout.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Palutena pouting</h2>
+	<p>Original artwork by <a href="https://twitter.com/karkan3/status/1076051217665552385">karkan3</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/palutena_pout/palutena_pout.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/palutena_pout/palutena_pout.saml" download="palutena_pout">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/speedracer_wins/SPEED_WINS.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/speedracer_wins/SPEED_WINS.sar" download="SPEED_WINS">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/speedracer_wins/SPEED_WINS.saml" download="SPEED_WINS">Project File (.saml)</a></font>
-	</p></td>
-    <td>Speed Racer WINS!<br>
-	Hooray! Hooray! Hooray! (Check the source for more information on the context)</td>
-    <td><a href="https://www.youtube.com/watch?v=WC0YAJR6xQQ">Speed Racer</a></td>
+    <td><img src="symbolarts/alice_crying/alice_crying.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Alice Crying</h2>
+	<p>Original artwork by <a href="https://danbooru.donmai.us/posts/1326916">yukiwo</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/alice_crying/alice_crying.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/alice_crying/alice_crying.saml" download="alice_crying">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/terminalmontage_mario/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/terminalmontage_mario/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/terminalmontage_mario/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Speedrunner Mario<br>
-	In the Project file, you can move Mario around as a whole with the folder. This can be handy as a template.</td>
-    <td><a href="https://www.youtube.com/user/TerminalMontage">Terminal Montage</a></td>
+    <td><img src="symbolarts/silence_brand/silence_bot.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>silence, bot</h2>
+	<p>Original Artwork by the Internet.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/silence_brand/silence_bot.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/silence_brand/silence_bot.saml" download="no_free_will">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/changedaworld/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/changedaworld/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/changedaworld/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>change da world my final message. goodb ye<br>
-	It's on a transparent background and the message can be moved around.<br>
-	Might be useful for being KO'ed SAs.</td>
-    <td>Internet Meme</td>
+    <td><img src="symbolarts/dante_jackfrost/dante_jackfrost.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Dante and Jack Frost</h2>
+	<p>Original artwork by <a href="https://twitter.com/i/web/status/1052876157060669440">pspsno_pan</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/dante_jackfrost/dante_jackfrost.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/dante_jackfrost/dante_jackfrost.saml" download="dante_jackfrost">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/alice_crying/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/alice_crying/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/alice_crying/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>A crying Alice<br>
-	A lot of fine lines when recreating this. I was originally going to not make the background due to reaching the symbol limit, but I improvised with icons that don't correspond.<br>
-	I can't find the original source, Danbooru source leads to dead url.</td>
-    <td><a href="https://danbooru.donmai.us/posts/1326916">yukiwo</a></td>
+    <td><img src="symbolarts/no_free_will/no_free_will.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>A striking line from MGS2</h2>
+	<p>Originally a line from the game Metal Gear Solid 2.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/no_free_will/no_free_will.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/no_free_will/no_free_will.saml" download="no_free_will">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/dante_jackfrost/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/dante_jackfrost/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/dante_jackfrost/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Jack Frost hugging Dante from the Devil May Cry series<br>
-	Done this before the Persona collab was announced, so I'm pretty stoke I ported one Jack Frost art to PSO2.<br>
-	I'll admit, it was a bit of a rush job with the line art, but it does look a bit better ingame.</td>
-    <td><a href="https://twitter.com/i/web/status/1052876157060669440">pspsno_pan</a></td>
+    <td><img src="symbolarts/chargemanken_aeugh/chargemanken_aeugh.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Chargeman Ken loses</h2>
+	<p>Original artwork from the show Chargeman Ken <a href="https://www.youtube.com/watch?v=uczvIKDcnS4">(here's a good review)</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/chargemanken_aeugh/chargemanken_aeugh.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/chargemanken_aeugh/chargemanken_aeugh.saml" download="chargemanken_aeugh">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/dva_confused/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/dva_confused/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/dva_confused/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>A confused D.Va<br>
-	One of my earlier anime based SA ports. The simple colors and little details make it easy to work with.</td>
-    <td>Pinterest... ok, I'll need to do a search</td>
-  </tr>
-  
-  
-  <tr>
-    <td><img src="symbolarts/dva_pewpew/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/dva_pewpew/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/dva_pewpew/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>D.Va Pew-Pew!<br>
-	I absolutely fell in love with k3lly's artstyle and wanted to use it as a SA. It was an earlier SA port and I hit so many times the limit it wasn't funny. I had to do a lot of creative symbol count reducing.<br>
-	However, the fine details were hard to replicate and replicating the pencil style is kinda impossible (at least for me). Check the original artwork, it's really good!</td>
-    <td><a href="https://www.deviantart.com/kelly01/art/D-VA-k3lly-611090504">k3lly</a></td>
+    <td><img src="symbolarts/speedracer_wins/speedracer_wins.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Speed wins!</h2>
+	<p>Original artwork from the show Speed Racer <a href="https://www.youtube.com/watch?v=WC0YAJR6xQQ">(the clip in question)</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/speedracer_wins/speedracer_wins.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/speedracer_wins/speedracer_wins.saml" download="speedracer_wins">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/eggman_announcement/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/eggman_announcement/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/eggman_announcement/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>I'VE COME TO MAKE AN ANNOUNCEMENT<br>
-	Only time I've touched anything 3D for an SA. While the source is Sonic Adventure 2 for the Art, I've linked to the origin of the joke, the SnapCube Realtime Dub of SA2's Dark Story. Really funny!<br>
-	The head was so small that the online editor struggle in positioning, so it was the best I could do.</td>
-    <td><a href="https://www.youtube.com/watch?v=IMC0uZY2iH0">Sonic Adventure 2 Realtime Dub by SnapCube</a></td>
+    <td><img src="symbolarts/dva_pewpew/dva_pewpew.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>D.Va Pew Pew</h2>
+	<p>Original artwork by <a href="https://www.deviantart.com/kelly01/art/D-VA-k3lly-611090504">k3lly</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/dva_pewpew/dva_pewpew.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/dva_pewpew/dva_pewpew.saml" download="dva_pewpew">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/emoji_laughingcryingopem/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/emoji_laughingcryingopem/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/emoji_laughingcryingopem/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>WHEEZE SO FUNNY (can't wait for the deepfried version)</td>
-    <td>The Internet</td>
-  </tr>
-  
-  
-  <tr>
-    <td><img src="symbolarts/extra_thicc/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/extra_thicc/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/extra_thicc/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>EXTRA THICC<br>
-	I'll admit, I've recently seen better versions of it floating on Ship 2. But I still prefer my text...</td>
-    <td>Samurai Jack</td>
+    <td><img src="symbolarts/terminalmontage_mario/terminalmontage_mario.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Speedrunner Mario</h2>
+	<p>Original artwork from <a href="https://www.youtube.com/user/TerminalMontage">Terminal Montage</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/terminalmontage_mario/terminalmontage_mario.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/terminalmontage_mario/terminalmontage_mario.saml" download="terminalmontage_mario">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/femvergil_motivatedA/preview.png" class="img-responsive" width="100%" alt=""><br><br>
-	<img src="symbolarts/femvergil_motivatedB/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/femvergil_motivatedA/symbolart_file.sar" download="w3logo">Download A (.sar)</a></b></font><br><br>
-		<font size="5"><b>&#128189 <a href="symbolarts/femvergil_motivatedB/symbolart_file.sar" download="w3logo">Download B (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/femvergil_motivatedA/project_file.saml" download="w3logo">Project File A (.saml)</a></font><br>
-		<font size="3">&#128209 <a href="symbolarts/femvergil_motivatedB/project_file.saml" download="w3logo">Project File B (.saml)</a></font>
-	</p></td>
-    <td>Now... I'm motivated!<br>
-	A bit of a joke SA I've made for someone in my alliance discord, who asked if I could do the Vergil "Now... I'm motivated!" meme.<br>
-	I kinda wanted to do it, but the images were too high quality for my skills. So I searched danbooru and found a female Vergil and said, "wish granted, but vergil is now a girl".<br>
-	Wasn't too pleased with how the text was readable on first go ingame (B), so I did (A), but now you can see less details on Vergil. Both are available to download.</td>
-    <td><a href="https://www.pixiv.net/en/artworks/49122515">fuka (kirrier.k)</a></td>
+    <td><img src="symbolarts/changedaworld/changedaworld.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>change da world</h2>
+	<p>Original artwork from the Internet</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/changedaworld/changedaworld.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/changedaworld/changedaworld.saml" download="changedaworld">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/formidable_ok/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/formidable_ok/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/formidable_ok/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Formidable from Azur Lane<br>
-	I hit the symbol limit real quick here due to poor management. I'm not too pleased with it and it does an injustice to the beauty of the original art. Maybe you wanna improve it? Those SAML files aren't there for nothing!</td>
-    <td><a href="https://twitter.com/i/web/status/1279789024043925505">gomashio_ponz</a></td>
+    <td><img src="symbolarts/dva_confused/dva_confused.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Confused D.Va</h2>
+	<p>Original artwork by... eurgh... I only found this on Pinterest. Any help?</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/dva_confused/dva_confused.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/dva_confused/dva_confused.saml" download="dva_confused">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/man_of_culture/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/man_of_culture/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/man_of_culture/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Ah, I See you're a man of culture as well<br>
-	I see some stores on Ship 2 with an overweight version and their subtitles looks like they were made by cavemen. Heh. I prefer my version, even if the field looks lamer than the other one.</td>
-    <td>Some meme</td>
+    <td><img src="symbolarts/eggman_announcement/eggman_announcement.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>I HAVE AN ANNOUNCEMENT TO MAKE</h2>
+	<p>Original scene from Sonic Adventure 2 <a href="https://www.youtube.com/watch?v=IMC0uZY2iH0">(but the SA is referring to this famous video)</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/eggman_announcement/eggman_announcement.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/eggman_announcement/eggman_announcement.saml" download="eggman_announcement">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/mercy_gonnagoheal/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/mercy_gonnagoheal/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/mercy_gonnagoheal/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>I need healing!<br>
-	I need to do a TF2 version but I'm looking for a good, simple and clean art of the Medic. Ain't too fond of Overwatch anymore.</td>
-    <td>I found it on a YT thumbnail. Help?</td>
+    <td><img src="symbolarts/peach_sweet/peach_sweet.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>SSBM Peach</h2>
+	<p>Original artwork by <a href="https://www.deviantart.com/moxie2d/art/Day-13-Armada-526796783">moxie2D</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/peach_sweet/peach_sweet.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/peach_sweet/peach_sweet.saml" download="peach_sweet">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/mgs_codec/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/mgs_codec/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/mgs_codec/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Metal Gear Solid Codec template<br>
-	Not much to see. Too lazy to make portraits.</td>
-    <td>Metal Gear Solid</td>
+    <td><img src="symbolarts/emoji_laughingcryingopem/emoji_laughingcryingopem.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>WHEEZE</h2>
+	<p>Emoji abuse is the bane of my existance.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/emoji_laughingcryingopem/emoji_laughingcryingopem.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/emoji_laughingcryingopem/emoji_laughingcryingopem.saml" download="emoji_laughingcryingopem">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/mspaint_thinking_emoji/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/mspaint_thinking_emoji/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/mspaint_thinking_emoji/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>MS Paint Thinking emoji<br>
-	I'm sure someone asked for this.</td>
-    <td>The Internet</td>
+    <td><img src="symbolarts/extra_thicc/extra_thicc.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>EXTRA THICC</h2>
+	<p>Original source is from Samurai Jack.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/extra_thicc/extra_thicc.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/extra_thicc/extra_thicc.saml" download="extra_thicc">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/notice_sa_acquisition/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/notice_sa_acquisition/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/notice_sa_acquisition/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Notice of SA Acquisition<br>
-	I wanted to have a SA stealing meme, but I'm not premium: I have to live with 10 slots. Oh well, saying in chat I stole someone's SA is less impressive...</td>
-    <td>The Internet</td>
+    <td><img src="symbolarts/femvergil_motivatedA/femvergil_motivatedA.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Now... I'm motivated! (Female Vergil edition)</h2>
+	<p>Original artwork by <a href="https://www.pixiv.net/en/artworks/49122515">fuka (kirrier.k)</a></p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/femvergil_motivatedA/femvergil_motivatedA.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/femvergil_motivatedA/femvergil_motivatedA.saml" download="femvergil_motivatedA">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/one_eternity_later/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/one_eternity_later/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/one_eternity_later/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>One Eternity Later<br>
-	I was lazy with the BG, but I made this because of Challenge Mode. Please visit the game mode some day, okay? It's fun!</td>
-    <td>Sponge Bob</td>
+    <td><img src="symbolarts/formidable_ok/formidable_ok.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Formidable (Azur Lane)</h2>
+	<p>Original artwork by <a href="https://twitter.com/i/web/status/1279789024043925505">gomashio_ponz</a>. Ran out of symbols, and original artwork is still leagues better than my port.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/formidable_ok/formidable_ok.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/formidable_ok/formidable_ok.saml" download="formidable_ok">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/palutena_pout/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/palutena_pout/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/palutena_pout/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Palutena pouting<br>
-	Another one of my earlier anime SAs, but this time I took a lot of time with it. There are a few variations and hit the limit multiple times.<br>
-	I don't use this SA often at all weirdly enough. The original artwork is pretty, please check out the source!</td>
-    <td><a href="https://twitter.com/karkan3/status/1076051217665552385">karkan3</a></td>
+    <td><img src="symbolarts/win10_bsod/win10_bsod.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Windows 10 BSOD</h2>
+	<p>Based off the Windows 10 BSOD.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/win10_bsod/win10_bsod.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/win10_bsod/win10_bsod.saml" download="win10_bsod">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/peach_sweet/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/peach_sweet/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/peach_sweet/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Melee Peach saying Suhweet!<br>
-	Another art I had to port when I saw it online. The style is so good and the SA probably doesn't do it justice. Please check the source out, their art is pretty amazing! (also, the colors are due to the shading)</td>
-    <td><a href="https://www.deviantart.com/moxie2d/art/Day-13-Armada-526796783">moxie2D</a></td>
+    <td><img src="symbolarts/man_of_culture/man_of_culture.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Ah, I see you're a man of culture as well.</h2>
+	<p>Originally from an anime.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/man_of_culture/man_of_culture.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/man_of_culture/man_of_culture.saml" download="man_of_culture">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/pecorine_nice/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/pecorine_nice/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/pecorine_nice/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Pecorine<br>
-	I have no idea why this character's show/game is popular, but I'll admit the design is cute. I ran out of Symbols real quick and the colouring/shading could not be finished. Sorry!<br>
-	The original art has a very nice colouring/shading going on and this probably didn't do it justice. Sorry... :(</td>
-    <td><a href="https://www.pixiv.net/en/artworks/82820742">gamuo</a></td>
+    <td><img src="symbolarts/mercy_gonnagoheal/mercy_gonnagoheal.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Mercy is tired</h2>
+	<p>Original artwork by... uhm... I found this on a YT thumbnail. Help?</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/mercy_gonnagoheal/mercy_gonnagoheal.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/mercy_gonnagoheal/mercy_gonnagoheal.saml" download="mercy_gonnagoheal">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/serena_hiya/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/serena_hiya/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/serena_hiya/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Serena saying Hello in French = Bonjour<br>
-	I think I nailed the port for this one for the most part. Simple line art and colouring made it ideal.<br>
-	Danbooru links to a direct twitter image without the tweet itself.</td>
-    <td><a href="https://danbooru.donmai.us/posts/1507411">shuri</a></td>
+    <td><img src="symbolarts/mgs_codec/mgs_codec.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>MGS Codec Template</h2>
+	<p>Originally from Metal Gear Solid.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/mgs_codec/mgs_codec.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/mgs_codec/mgs_codec.saml" download="mgs_codec">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/star_didnt_try/preview.png" class="img-responsive" width="100%" alt=""><br><br>
-	<img src="symbolarts/star_you_tried/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/star_didnt_try/symbolart_file.sar" download="w3logo">Download A(.sar)</a></b></font><br><br>
-		<font size="5"><b>&#128189 <a href="symbolarts/star_you_tried/symbolart_file.sar" download="w3logo">Download B(.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/star_didnt_try/project_file.saml" download="w3logo">Project File A(.saml)</a></font><br>
-		<font size="3">&#128209 <a href="symbolarts/star_you_tried/project_file.saml" download="w3logo">Project File B(.saml)</a></font>
-	</p></td>
-    <td>Use these to shame your friends when they defeat the trapped lillipan with a single attack.</td>
-    <td>The Internet</td>
+    <td><img src="symbolarts/mspaint_thinking_emoji/mspaint_thinking_emoji.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Thinking Emoji (MS Paint edition)</h2>
+	<p>A meme born from the Internet</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/mspaint_thinking_emoji/mspaint_thinking_emoji.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/mspaint_thinking_emoji/mspaint_thinking_emoji.saml" download="mspaint_thinking_emoji">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/surprised_pikaface/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/surprised_pikaface/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/surprised_pikaface/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Many others have done better versions, it's only here for completion sake.</td>
-    <td>Pokemon</td>
+    <td><img src="symbolarts/vmu_corrupted/vmu_corrupted.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>VMU Corruption</h2>
+	<p>Based off the Dreamcast UI.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/vmu_corrupted/vmu_corrupted.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/vmu_corrupted/vmu_corrupted.saml" download="vmu_corrupted">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/tf2_foolishpeasant/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/tf2_foolishpeasant/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/tf2_foolishpeasant/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>You don't have a towering pillar of hats you poor peasant? Scoffs.<br>
-	Second SA I made. I'm simultaneously impressed by the little details and embarrased by the other little details. Weird huh? Probably one of the few "old-timey" style SAs around I think.</td>
-    <td>Team Fortress 2</td>
+    <td><img src="symbolarts/tf2_foolishpeasant/tf2_foolishpeasant.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Foolish peasant</h2>
+	<p>Based off an artwork piece for an update of Team Fortress 2.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/tf2_foolishpeasant/tf2_foolishpeasant.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/tf2_foolishpeasant/tf2_foolishpeasant.saml" download="tf2_foolishpeasant">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/tf2_nope/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/tf2_nope/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/tf2_nope/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>nope.avi<br>
-	First SA I made and it kinda shows. There is a reason I avoid 3D.</td>
-    <td>Team Fortress 2</td>
+    <td><img src="symbolarts/one_eternity_later/one_eternity_later.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>One Eternity Later...</h2>
+	<p>Originally from the show Sponge Bob.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/one_eternity_later/one_eternity_later.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/one_eternity_later/one_eternity_later.saml" download="one_eternity_later">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/vmu_corrupted/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/vmu_corrupted/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/vmu_corrupted/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>Dreamcast Menu Interface (VMU Corrupted)<br>
-	This could probably scare any old PSO1 player. But ingame the text is too blurry. Use this on a Symbol Art Projector in front of a Dreamcast furniture for better results.</td>
-    <td>Dreamcast</td>
+    <td><img src="symbolarts/star_didnt_try/star_didnt_try.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>You didn't even try</h2>
+	<p>Welp</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/star_didnt_try/star_didnt_try.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/star_didnt_try/star_didnt_try.saml" download="star_didnt_try">Project File (.saml)</a></p>
+	</td>
   </tr>
   
   <tr>
-    <td><img src="symbolarts/win10_bsod/preview.png" class="img-responsive" width="100%" alt=""></td>
-    <td><p>
-		<font size="5"><b>&#128189 <a href="symbolarts/win10_bsod/symbolart_file.sar" download="w3logo">Download (.sar)</a></b></font><br><br>
-		<font size="3">&#128209 <a href="symbolarts/win10_bsod/project_file.saml" download="w3logo">Project File (.saml)</a></font>
-	</p></td>
-    <td>BSOD<br>
-	I'm surprised I didn't see anyone make this (at least on Ship 2), especially with all the hate surrounding the MS Store version and it's raid boss installer. Funnily enough, I saw someone use this as a Store SA, that's cool!</td>
-    <td>Windows</td>
+    <td><img src="symbolarts/notice_sa_acquisition/notice_sa_acquisition.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>SA Acquisition Notice</h2>
+	<p>Based off the Meme Acquisition Notice meme.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/notice_sa_acquisition/notice_sa_acquisition.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/notice_sa_acquisition/notice_sa_acquisition.saml" download="notice_sa_acquisition">Project File (.saml)</a></p>
+	</td>
+  </tr>
+  
+  <tr>
+    <td><img src="symbolarts/surprised_pikaface/surprised_pikaface.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>Another Surprised Pikachu Face</h2>
+	<p>A bit lackluster and I found way better ones on Ship 2. I was lazy. :)</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/surprised_pikaface/surprised_pikaface.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/surprised_pikaface/surprised_pikaface.saml" download="surprised_pikaface">Project File (.saml)</a></p>
+	</td>
+  </tr>
+  
+  <tr>
+    <td><img src="symbolarts/tf2_nope/tf2_nope.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>nope.avi</h2>
+	<p>First SA I made, don't @ me.</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/tf2_nope/tf2_nope.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/tf2_nope/tf2_nope.saml" download="tf2_nope">Project File (.saml)</a></p>
+	</td>
+  </tr>
+  
+  <tr>
+    <td><img src="symbolarts/star_you_tried/star_you_tried.png" class="img-responsive" width="100%" alt=""></td><td>
+	<h2>You tried</h2>
+	<p>Fine</p>
+	<button class="sarbtn" onclick="window.location.href='symbolarts/star_you_tried/star_you_tried.sar'"><i class="fa fa-download"></i> Download SA</button>
+	<p>&#128162; <a href="symbolarts/star_you_tried/star_you_tried.saml" download="star_you_tried">Project File (.saml)</a></p>
+	</td>
   </tr>
   
 </table>
@@ -433,10 +425,7 @@ tr:nth-child(odd) {
 
 <div class="footing">
 <footer>
-Sorry, I just learned HTML an hour ago. Don't hate me for the 90s web design. (I actually like the simplicity of it).<br><br>
-Originally, I was going to get this table to parse the list of folders in the git with an SA file, project file, and preview image, but I have no idea how to do that (I think that's a Javascript thing but I'm not touching that for a simple download page).<br><br>
-I am supposed to be working on my video game project, but PSO2 has eaten 80% of my free time. Send help. (I'll admit, it's also kind of related to still learning Heaps.io and struggling to get decent collision detection/resolution set up (right now I'm using BOUNDARY BOXES FOR COLLISIONS, HELP). They have all these colliders and I have no idea how to use them, and the docs aren't helping. Arrrgh!<br>
-Already, I have to scrap chasing enemies on field because I know it'll be a misery to make them chase the player in a 3D platformer world (already in 2D it was pretty bad), but I think taking the Pokemon line of sight starts a battle approach might be a better solution. The enemies that move could be set on a predefined path that can completly avoid having to deal with collisions with world, and it can create a easy to understand ambushing system: touch the foe and you get first strike, if they spot you it's an ambush! See, being bad at programming does have it's benefits!
+kek
 </footer>
 </div>
 
