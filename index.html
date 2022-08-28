@@ -14,8 +14,6 @@ body {
 }
 
 img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  height: 50%;
   width: auto;
 }
 
@@ -38,6 +36,12 @@ div.polaroidcontainer {
 .heading {
   margin: auto;
   width: 70%;
+  padding: 10px;
+}
+
+.imgheading {
+  margin: auto;
+  width: 100%;
   padding: 10px;
 }
 
@@ -105,6 +109,7 @@ td, th {
 
 .charaimg {
 	text-align: right;
+	height: 50%;
 }
 
 .container {
@@ -118,6 +123,53 @@ td, th {
   font-size: 16px;
   padding: 16px 32px;
 }
+/* Gallery */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 </style>
 </head>
@@ -125,465 +177,750 @@ td, th {
 <body>
 
 <div class="heading">
-	<h1>ingenoire's PSO2 Stuff</h1>
-	<p>
-	Here's a bit of stuff I made for PSO2. I ported these Symbol Arts from the the world of imagery into the world of shapes, and even offer you the source file for easier editing using <a href="https://malulleybovo.github.io/SymbolArtEditorOnline/">this online symbol art editor.</a> And now I also offer character data!<br>
-	<br>
-	To install Symbol Arts, simply drop the .SAR file into your Documents\SEGA\PHANTASYSTARONLINE2_NA_STEAM\symbolarts\import (we're assuming you use Steam), then open PSO2, go to Symbol Arts, set the current tab to Import, and press Import. Your SA should appear in it. Press save and override a slot of your SA palette, and you should be able to use it.
-	<br>
-	<br>
-	<br>
-	To open Character Datas in game, drop the character data file into your Documents\SEGA\PHANTASYSTARONLINE2_NA_STEAM\ (yes, at the root of the directory), then visit the Salon, down to the last category of the menu, and select from the Load Character Data the data you want.
-	<br><br>
-	If you need to contact me regarding anything on this page, contact me on twitter <a href="https://twitter.com/ingenoireP">@ingenoireP</a>, or via Discord at <b>ingenoire#2744.</b></p>
+	<img class="imgheading" src="themes/header.png" width="auto">
+	<table>
+		<tr>
+			<td><a target="_blank" href="https://www.youtube.com/channel/UC3FpKKSB1hrCgh5SSf31SqQ"><img class="imgheading" src="themes/yt_button.png"></a></td>
+			<td><a target="_blank" href="https://twitter.com/ingenoireP"><img class="imgheading" src="themes/twitter.png"></a></td>
+			<td><img class="imgheading" src="themes/discord.png"></td>
+		</tr>
+	</table>
 </div>
 
 
- 
 <div class="content">
-<h1>Character Data</h1>
-<p>You're free to do whatever... you... want... ;)</p>
-<table>
+	<div class="responsive">
+		<h1>Character Data</h1>
+	</div>
+	<br><br><br><p>You're free to do whatever... you... want... ;)</p>
+	<div class="clearfix"></div>
 
-	<tr>
-		<td><h2>Characters</h2></td>
-	</tr>
+	<div style="padding:6px;">
 
-	<tr>
-		<td class="charaimg"><img class="charadata" src="charadata/sovereign/yvonne.png" class="img-responsive" width="100%" alt=""></td><td>
-		<h2>Yvonne Sovereign</h2>
-		<p>Current main look.</p>
-		<button class="sarbtn" onclick="window.location.href='charadata/sovereign/Release_Yvonne.fhp'"><i class="fa fa-download"></i> Download Character Data</button>
-		</td>
-	</tr>
+	<table>
+		<tr><td>
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/sovereign/yvonne.png">
+				  <img src="charadata/sovereign/yvonne.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Yvonne</h3>
+					<p>Default Look!<br><b>Updated: 28/08/22</b></p>
+					<button class="sarbtn" onclick="window.location.href='charadata/sovereign/Release_Yvonne2.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/alter/alternoire.png">
+				  <img src="charadata/alter/alternoire.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Alter Yvonne</h3>
+					<p>Alter default Look!<br><b>Updated: 28/08/22</b></p>
+					<button class="sarbtn" onclick="window.location.href='charadata/alter/Release_Alternoire2.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/essex/essex.png">
+				  <img src="charadata/essex/essex.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Essex - Azur Lane</h3>
+					<p>The one people like to associate with SEGS.</p>
+					<button class="sarbtn" onclick="window.location.href='charadata/essex/essex.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/yomi/yomi.png">
+				  <img src="charadata/yomi/yomi.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Yomi - Senran Kagura</h3>
+					<p>The best Senran Kagura waifu, no doubt.</p>
+					<button class="sarbtn" onclick="window.location.href='charadata/yomi/yomi.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/ara/ara.png">
+				  <img src="charadata/ara/ara.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Ara - Elsword</h3>
+					<p>Was my class of choice when playing it.<br><br></p>
+					<button class="sarbtn" onclick="window.location.href='charadata/ara/ara.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
 
-	<tr>
-		<td class="charaimg"><img class="charadata" src="charadata/alter/alternoire.png" class="img-responsive" width="100%" alt=""></td><td>
-		<h2>Alternoire</h2>
-		<p>ALTER self of Yvonne. Ok, but is she really an ALTER? Probably not. But are we talking about the cool Alters in the Fate series... or the loreless boring edits of older falspawn and supernaturals called ALTERS? Yeah probably that one, sadly.</p>
-		<button class="sarbtn" onclick="window.location.href='charadata/alter/Release_Alternoire.fhp'"><i class="fa fa-download"></i> Download Character Data</button>
-		</td>
-	</tr>
+			<div class="clearfix"></div>
 
-	<tr>
-		<td><h2>MTN Karts</h2></td>
-	</tr>
-
-	<tr>
-		<td class="charaimg"><img class="charadata" src="charadata/mtn_kart/picture.png" class="img-responsive" width="100%" alt=""></td><td>
-		<h2>MTN Kart</h2>
-		<p>Working kart! For use with the new MTN from the SG Scratch Bonus Refined Form 2. <a href="https://twitter.com/IngenoireP/status/1514729903714877445">Check this twitter post for the accessories.</a></p>
-		<button class="sarbtn" onclick="window.location.href='charadata/mtn_kart/KartStandardA.fhp'"><i class="fa fa-download"></i> Download Character Data</button>
-		</td>
-	</tr>
-
-	<tr>
-		<td class="charaimg"><img class="charadata" src="charadata/mtn_cheapkart/picture.png" class="img-responsive" width="100%" alt=""></td><td>
-		<h2>MTN Newbie Kart</h2>
-		<p>Working kart that requires NO ADDITIONAL ACCESSORIES! Look. It's not pretty, but you can race. For use with the new MTN from the SG Scratch Bonus Refined Form 2.</p>
-		<button class="sarbtn" onclick="window.location.href='charadata/mtn_cheapkart/KartBudget.fhp'"><i class="fa fa-download"></i> Download Character Data</button>
-		</td>
-	</tr>
-
-	<tr>
-		<td><h2>Older Character Datas</h2></td>
-	</tr>
-
-	<tr>
-		<td class="charaimg"><img class="charadata" src="charadata/kart/picture.png" class="img-responsive" width="100%" alt=""></td><td>
-		<h2>Phantasy KART (old)</h2>
-		<p>Only requires cheap and easy to find pieces. This uses a chair. <a href="https://twitter.com/IngenoireP/status/1457458270889775108">Check this twitter post for the accessories.</a></p>
-		<button class="sarbtn" onclick="window.location.href='charadata/kart/kart.fhp'"><i class="fa fa-download"></i> Download Character Data</button>
-		</td>
-	</tr>
-
-	<tr>
-		<td class="charaimg"><img class="charadata" src="charadata/yvonne/picture.png" class="img-responsive" width="100%" alt=""></td><td>
-		<h2>Yvonne (old)</h2>
-		<p>My current character, Yvonne (but it's the very old design). The outfit seriously reminds me of the Ideal weapons, to which the Partisan one in particular is my favorite. I'm on Ship 2 if you want to say hi!</p>
-		<button class="sarbtn" onclick="window.location.href='charadata/yvonne/yvonne.fhp'"><i class="fa fa-download"></i> Download Character Data</button>
-		</td>
-	</tr>
+			<div style="padding:6px;">
+		</td></tr>
+	</table>
 	
-	<tr>
-		<td class="charaimg"><img class="charadata" src="charadata/shivaplane/picture.png" class="img-responsive" width="100%" alt=""></td><td>
-		<h2>Shiva Plane</h2>
-		<p>A shiva chibi in a plane. Make sure to get Shiva Chibi from the PSO2 Story Completion Campaign!</p>
-		<button class="sarbtn" onclick="window.location.href='charadata/shivaplane/shivaplane.fhp'"><i class="fa fa-download"></i> Download Character Data</button>
-		</td>
-	</tr>
+	<p>To open Character Datas in game, drop the character data file into your Documents\SEGA\PHANTASYSTARONLINE2_NA_STEAM\ (yes, at the root of the directory), then visit the Salon, down to the last category of the menu, and select from the Load Character Data the data you want.</p>
 	
-	<tr>
-		<td class="charaimg"><img class="charadata" src="charadata/crimsonfellwrymette/picture.png" class="img-responsive" width="100%" alt=""></td><td>
-		<h2>Crimson Fellwrymette</h2>
-		<p>The crimson fellwrym, but transformed into an anime waifu.</p>
-		<button class="sarbtn" onclick="window.location.href='charadata/crimsonfellwrymette/crimsonfellwrymette.fhp'"><i class="fa fa-download"></i> Download Character Data</button>
-		</td>
-	</tr>
-	
-	<tr>
-		<td class="charaimg"><img class="charadata" src="charadata/chair/picture.png" class="img-responsive" width="100%" alt=""></td><td>
-		<h2>DIY Shiva Chair</h2>
-		<p>A custom built chair to be used with the Shiva 2 emote.</p>
-		<button class="sarbtn" onclick="window.location.href='charadata/chair/chair.fhp'"><i class="fa fa-download"></i> Download Character Data</button>
-		</td>
-	</tr>
-</table>
+	<div class="responsive">
+		<img src="charadata/vtubers/vtuberwebsitedl.png" width="100%">
+	</div>
+	<div class="clearfix"></div>
 
-<div class="content">
-<h1>Other Stuff</h1>
-<p>Amongus Theme</p>
-<table>
-	<tr>
-		<td><img src="themes/sus.png" class="img-responsive" width="100%" alt="">
-		<button class="sarbtn" onclick="window.location.href='themes/AmongUsTweaker.zip'"><i class="fa fa-download"></i> Download Tweaker theme</button>
-		</td>
-	</tr>
-</table>
-<p>Ship 2 Survey</p>
-<table>
+	<p>VTubers I've created for the N-V-Arkers video: see <a href="https://youtu.be/AfP6RvMWRQM">the original video here</a>, and then watch the <a href="https://youtu.be/SbolWTClTr8">extended ending here!</a></p>
+	<div style="padding:6px;">
+	
+	<table>
+		<tr><td>
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_central.png">
+				  <img src="charadata/vtubers/vt_central.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Centy - Central Canon</h3>
+					The definite seiso of the group, armed with a powerful eradication laser. Crawford loves to donate to her every time she breathes. She hides a dark side.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_central.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_darkfalz.png">
+				  <img src="charadata/vtubers/vt_darkfalz.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Eradi - Dark Falz (NGS)</h3>
+					Uncontrollably horny. When she isn't working at her puritan family's entreprise, she streams Hentai games and other banned games.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_darkfalz.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_boombox.png">
+				  <img src="charadata/vtubers/vt_boombox.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Melty - Meltius</h3>
+					Loves music, is cute, but I didn't actually plan a personality for her.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_boombox.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_aeliotown.png">
+				  <img src="charadata/vtubers/vt_aeliotown.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Horobiru - Destroyed Aelio Town</h3>
+					Depressed at the current state of NGS, she's a heavy drinker and keeps yearning for the glory days of PSO2, even on stream. Despite this she's online 24/7 and never stops speaking.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_aeliotown.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_castle.png">
+				  <img src="charadata/vtubers/vt_castle.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Mekuramashi - Floating Sky Thing</h3>
+					Artpiece VTuber, we'll only know who she is when she wakes up. Maybe in another eight years, she'll wake up.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_castle.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_nogleth.png">
+				  <img src="charadata/vtubers/vt_nogleth.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Nagi - Giga Nogleth</h3>
+					Lives in a basement with very spotty power generation, and loves playing extremely long JRPGs. She freaks out and becomes a serial killer if her game dies.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_nogleth.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_otarica.png">
+				  <img src="charadata/vtubers/vt_otarica.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Megumarotari - Otarica</h3>
+					A charming VTuber who likes to sleep a lot and often says stuff that could be misinterpretated wrong. Doesn't actually stream herself but jumps in other streams.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_otarica.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_purpledog.png">
+				  <img src="charadata/vtubers/vt_purpledog.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Yuuki - Purple Dog</h3>
+					The seasonal purple dog from Retem, as a VTuber. Doesn't know what on earth VTubers even are, or even what video games are. Yvonne is not too fond of her.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_purpledog.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_redbox.png">
+				  <img src="charadata/vtubers/vt_redbox.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Amongusia - Red Box</h3>
+					A sus looking VTuber. Known to play games with cheats on.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_redbox.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_shoprobot.png">
+				  <img src="charadata/vtubers/vt_shoprobot.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Mise Tenin - Kvaris Shop Robot</h3>
+					A robot from Kvaris, specifically the Personal Shop one, loves market and stocks. When all her sisters combine, they become a hot mankiller robot.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_shoprobot.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_truck.png">
+				  <img src="charadata/vtubers/vt_truck.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Lobbie - Truck (from E-Trials)</h3>
+					A clumsy and clueless VTuber that plays Pokemon GO a lot, and does her mother's shopping chores on the way.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_truck.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_vidalun.png">
+				  <img src="charadata/vtubers/vt_vidalun.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Infinite Meme Tank! Kean LOVE! Is it wrong to focus sorely on HP and Damage Resistance in a game where the meta is DPS? - Vidalun Armor</h3>
+					A wise and mature VTuber who's invested into HP instead of DMG. Gets married to a Meme Tank and hits graduation because of it.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_vidalun.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/vtubers/vt_casualdf.png">
+				  <img src="charadata/vtubers/vt_casualdf.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Eradi (Casual)</h3>
+					Eradi, the Dark Falz VTuber, in her casual gear, while working at her family's ERP (Enterprise Resource Management) business.<br><br>
+					<button class="sarbtn" onclick="window.location.href='charadata/vtubers/vt_casualdf.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="clearfix"></div>
+
+			<div style="padding:6px;">
+		</td></tr>
+	</table>
+	
+	<div class="responsive">
+		<h1>Older Character Datas</h1>
+	</div>
+	<div class="clearfix"></div>
+
+	<div style="padding:6px;">
+	
+	<table>
+		<tr><td>
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/mtn_kart/picture.png">
+				  <img src="charadata/mtn_kart/picture.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>MTN Kart</h3>
+					<p>Working kart! <a href="https://twitter.com/IngenoireP/status/1514729903714877445">Check this twitter post for the accessories.</a></p>
+					<button class="sarbtn" onclick="window.location.href='charadata/mtn_kart/KartStandardA.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/mtn_cheapkart/picture.png">
+				  <img src="charadata/mtn_cheapkart/picture.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>MTN Newbie Kart</h3>
+					<p>Working kart that requires NO ADDITIONAL ACCESSORIES!</p>
+					<button class="sarbtn" onclick="window.location.href='charadata/mtn_cheapkart/KartBudget.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/kart/picture.png">
+				  <img src="charadata/kart/picture.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Phantasy KART (old)</h3>
+					<p>This uses a chair. <a href="https://twitter.com/IngenoireP/status/1457458270889775108">Check this twitter post for the accessories.</a></p>
+					<button class="sarbtn" onclick="window.location.href='charadata/kart/kart.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/yvonne/picture.png">
+				  <img src="charadata/yvonne/picture.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Yvonne (old)</h3>
+					<p>The old NGS look of my character. Her face didn't age well tbh...</p>
+					<button class="sarbtn" onclick="window.location.href='charadata/yvonne/yvonne.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/shivaplane/picture.png">
+				  <img src="charadata/shivaplane/picture.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Shiva Plane</h3>
+					<p>A shiva chibi in a plane. Make sure to get Shiva Chibi from the PSO2 Story Completion Campaign!</p>
+					<button class="sarbtn" onclick="window.location.href='charadata/shivaplane/shivaplane.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/crimsonfellwrymette/picture.png">
+				  <img src="charadata/crimsonfellwrymette/picture.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Crimson Fellwrymette</h3>
+					<p>The crimson fellwrym, but transformed into an anime waifu.</p>
+					<button class="sarbtn" onclick="window.location.href='charadata/crimsonfellwrymette/crimsonfellwrymette.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="charadata/chair/picture.png">
+				  <img src="charadata/chair/picture.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>DIY Shiva Chair</h3>
+					<p>A custom built chair to be used with the Shiva 2 emote.</p>
+					<button class="sarbtn" onclick="window.location.href='charadata/chair/chair.fhp'"><i class="fa fa-download"></i> DL</button>
+				</div>
+			  </div>
+			</div>
+
+			<div class="clearfix"></div>
+
+			<div style="padding:6px;">
+		</td></tr>
+	</table>
+	
+	
+	<div class="responsive">
+		<h1>Symbol Arts</h1>
+	</div>
+	<div class="clearfix"></div>
+
+	<div style="padding:6px;">
+	
+	<table>
+		<tr><td>
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/mario_anime/speedmario.png">
+				  <img src="symbolarts/mario_anime/speedmario.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Speedrunner Mario Anime</h3>
+					<p>Original artwork from <a href="https://www.youtube.com/user/TerminalMontage">Terminal Montage</a></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/mario_anime/speedmario.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/mario_anime/speedmario.saml" download="speedrunnermario">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/silence_brand/silence_brand.png">
+				  <img src="symbolarts/silence_brand/silence_brand.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>silence, brand</h3>
+					<p>Original Artwork by the Internet.<br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/silence_brand/silence_brand.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/silence_brand/silence_brand.saml" download="speedrunnermario">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/serena_hiya/serena_hiya.png">
+				  <img src="symbolarts/serena_hiya/serena_hiya.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Serena says hello in french</h3>
+					<p>Original artwork by <a href="https://danbooru.donmai.us/posts/1507411">shuri</a> (only link I found was danbooru, any help?)</p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/serena_hiya/serena_hiya.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/serena_hiya/serena_hiya.saml" download="serena_hiya">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/pecorine_nice/pecorine_nice.png">
+				  <img src="symbolarts/pecorine_nice/pecorine_nice.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Pecorine: "Nice!</h3>
+					<p>Original artwork by <a href="https://www.pixiv.net/en/artworks/82820742">gamuo</a><br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/pecorine_nice/pecorine_nice.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/pecorine_nice/pecorine_nice.saml" download="pecorine_nice">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/palutena_pout/palutena_pout.png">
+				  <img src="symbolarts/palutena_pout/palutena_pout.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Palutena pouting</h3>
+					<p>Original artwork by <a href="https://twitter.com/karkan3/status/1076051217665552385">karkan3</a><br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/palutena_pout/palutena_pout.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/palutena_pout/palutena_pout.saml" download="palutena_pout">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/alice_crying/alice_crying.png">
+				  <img src="symbolarts/alice_crying/alice_crying.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Alice Crying</h3>
+					<p>Original artwork by <a href="https://danbooru.donmai.us/posts/1326916">yukiwo</a><br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/alice_crying/alice_crying.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/alice_crying/alice_crying.saml" download="alice_crying">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/dante_jackfrost/dante_jackfrost.png">
+				  <img src="symbolarts/dante_jackfrost/dante_jackfrost.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Dante and Jack Frost</h3>
+					<p>Original artwork by <a href="https://twitter.com/i/web/status/1052876157060669440">pspsno_pan</a><br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/dante_jackfrost/dante_jackfrost.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/dante_jackfrost/dante_jackfrost.saml" download="dante_jackfrost">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/chargemanken_aeugh/chargemanken_aeugh.png">
+				  <img src="symbolarts/chargemanken_aeugh/chargemanken_aeugh.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Chargeman Ken loses</h3>
+					<p>Original artwork from the show Chargeman Ken <a href="https://www.youtube.com/watch?v=uczvIKDcnS4">(who?)</a></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/chargemanken_aeugh/chargemanken_aeugh.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/chargemanken_aeugh/chargemanken_aeugh.saml" download="chargemanken_aeugh">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/speedracer_wins/speedracer_wins.png">
+				  <img src="symbolarts/speedracer_wins/speedracer_wins.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Speed wins!</h3>
+					<p>Original artwork from the show Speed Racer <a href="https://www.youtube.com/watch?v=WC0YAJR6xQQ">(the clip in question)</a></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/speedracer_wins/speedracer_wins.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/speedracer_wins/speedracer_wins.saml" download="speedracer_wins">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/dva_pewpew/dva_pewpew.png">
+				  <img src="symbolarts/dva_pewpew/dva_pewpew.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>D.Va Pew Pew!</h3>
+					<p>Original artwork by <a href="https://www.deviantart.com/kelly01/art/D-VA-k3lly-611090504">k3lly</a><br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/dva_pewpew/dva_pewpew.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/dva_pewpew/dva_pewpew.saml" download="dva_pewpew">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/terminalmontage_mario/terminalmontage_mario.png">
+				  <img src="symbolarts/terminalmontage_mario/terminalmontage_mario.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Speedrunner Mario</h3>
+					<p>Original artwork from <a href="https://www.youtube.com/user/TerminalMontage">Terminal Montage</a></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/terminalmontage_mario/terminalmontage_mario.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/terminalmontage_mario/terminalmontage_mario.saml" download="dva_pewpew">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/changedaworld/changedaworld.png">
+				  <img src="symbolarts/changedaworld/changedaworld.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>change da world</h3>
+					<p>Original artwork from the Internet<br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/changedaworld/changedaworld.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/changedaworld/changedaworld.saml" download="changedaworld">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/dva_confused/dva_confused.png">
+				  <img src="symbolarts/dva_confused/dva_confused.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Confused D.Va</h3>
+					<p>Original artwork by... eurgh... I only found this on Pinterest. Any help?<br><br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/dva_confused/dva_confused.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/dva_confused/dva_confused.saml" download="dva_confused">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/eggman_announcement/eggman_announcement.png">
+				  <img src="symbolarts/eggman_announcement/eggman_announcement.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>I HAVE AN ANNOUNCEMENT TO MAKE</h3>
+					<p>From Sonic Adventure 2 <a href="https://www.youtube.com/watch?v=IMC0uZY2iH0">(but the SA is referring to this famous video)<br></a></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/eggman_announcement/eggman_announcement.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/eggman_announcement/eggman_announcement.saml" download="eggman_announcement">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/peach_sweet/peach_sweet.png">
+				  <img src="symbolarts/peach_sweet/peach_sweet.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>SSBM Peach</h3>
+					<p>Original artwork by <a href="https://www.deviantart.com/moxie2d/art/Day-13-Armada-526796783">moxie2D</a><br><br><br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/peach_sweet/peach_sweet.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/peach_sweet/peach_sweet.saml" download="peach_sweet">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/emoji_laughingcryingopem/emoji_laughingcryingopem.png">
+				  <img src="symbolarts/emoji_laughingcryingopem/emoji_laughingcryingopem.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>WHEEZE</h3>
+					<p>Die<br><br><br><br></a></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/emoji_laughingcryingopem/emoji_laughingcryingopem.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/emoji_laughingcryingopem/emoji_laughingcryingopem.saml" download="emoji_laughingcryingopem">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/extra_thicc/extra_thicc.png">
+				  <img src="symbolarts/extra_thicc/extra_thicc.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>EXTRA THICC</h3>
+					<p>Original source is from Samurai Jack.</p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/extra_thicc/extra_thicc.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/extra_thicc/extra_thicc.saml" download="extra_thicc">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/femvergil_motivatedA/femvergil_motivatedA.png">
+				  <img src="symbolarts/femvergil_motivatedA/femvergil_motivatedA.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Now... I'm motivated! (Female Vergil edition)</h3>
+					<p>Original artwork by <a href="https://www.pixiv.net/en/artworks/49122515">fuka (kirrier.k)</a></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/femvergil_motivatedA/femvergil_motivatedA.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/femvergil_motivatedA/femvergil_motivatedA.saml" download="femvergil_motivatedA">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/formidable_ok/formidable_ok.png">
+				  <img src="symbolarts/formidable_ok/formidable_ok.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Formidable (Azur Lane)</h3>
+					<p>Original artwork by <a href="https://twitter.com/i/web/status/1279789024043925505">gomashio_ponz</a><br><br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/formidable_ok/formidable_ok.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/formidable_ok/formidable_ok.saml" download="formidable_ok">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/win10_bsod/win10_bsod.png">
+				  <img src="symbolarts/win10_bsod/win10_bsod.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Windows 10 BSOD</h3>
+					<p>Based off the Blue Screen of Death.<br><br><br></p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/win10_bsod/win10_bsod.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/win10_bsod/win10_bsod.saml" download="win10_bsod">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<a target="_blank" href="symbolarts/man_of_culture/man_of_culture.png">
+				  <img src="symbolarts/man_of_culture/man_of_culture.png" width="600" height="400">
+				</a>
+				<div class="desc">
+					<h3>Ah, I see you're a man of culture as well.</h3>
+					<p>Originally from an anime?</p>
+					<button class="sarbtn" onclick="window.location.href='symbolarts/man_of_culture/man_of_culture.sar'"><i class="fa fa-download"></i> DL</button>
+					<p>&#128162; <a href="symbolarts/man_of_culture/man_of_culture.saml" download="man_of_culture">Project File (.saml)</a></p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="responsive">
+			  <div class="gallery">
+				<div class="desc">
+					<h3><a href="https://github.com/Ingenoire/ingenoire.github.io/tree/master/symbolarts">There's more Symbol Arts hidden in the GitHub folder!</a></h3>
+				</div>
+			  </div>
+			</div>
+
+			<div class="clearfix"></div>
+
+			<div style="padding:6px;">
+		</td></tr>
+	</table>
+	<p>To install Symbol Arts, simply drop the .SAR file into your Documents\SEGA\PHANTASYSTARONLINE2_NA_STEAM\symbolarts\import (we're assuming you use Steam), then open PSO2, go to Symbol Arts, set the current tab to Import, and press Import. Your SA should appear in it. Press save and override a slot of your SA palette, and you should be able to use it.</p>
+	<p>Using <a href="https://malulleybovo.github.io/SymbolArtEditorOnline/">this online symbol art editor</a>, you can open the .saml files for better editing, especially since some objects are grouped into easier to manipulate folders.</p>
+	
+	<div class="responsive">
+		<h1>And everything else</h1>
+	</div>
+	<div class="clearfix"></div>
+
+	<div style="padding:6px;">
+	<p>Here's a <a href="https://na.arks-layer.com/">PSO2 Tweaker</a> theme featuring AMONGUS.</p>
+	<table>
+		<tr>
+			<td><img src="themes/sus.png" class="img-responsive" width="100%" alt="">
+			<button class="sarbtn" onclick="window.location.href='themes/AmongUsTweaker.zip'"><i class="fa fa-download"></i> Download Tweaker theme</button>
+			</td>
+		</tr>
+	</table>
+	<p>This is the spreadsheet I threw the data I gathered for <a href="https://www.youtube.com/watch?v=4CJ0g5jGiq8">this S2 Physique Survey video!</a></p>
+	<table>
 	<tr>
 		<td>
-		<p>This is the spreadsheet I threw the data I gathered for <a href="https://www.youtube.com/watch?v=4CJ0g5jGiq8">this S2 Physique Survey video!</a></p>
+		
 		<button class="sarbtn" onclick="window.location.href='survey/s2surveyjune22.xlsx'"><i class="fa fa-download"></i> Download the S2 Physique Survey used.</button>
 		</td>
 	</tr>
-</table>
-
-<div class="content">
-<h1>Shaders</h1>
-<p>Marvads on YT asked for my shaders. They're mostly for recording purposes, but here ya go. Open then save the opened page as.</p>
-<table>
-	<tr>
-		<td>
-		<button class="sarbtn" onclick="window.location.href='shaders/Recording.ini'"><i class="fa fa-download"></i> Recording</button>
-		</td>
-	</tr>
+	</table>
+	<p>Lastly, the shaders I've used for some of my stuff. Nothing fancy.</p>
+	<table>
+		<tr>
+			<td>
+			<button class="sarbtn" onclick="window.location.href='shaders/Recording.ini'"><i class="fa fa-download"></i> Recording</button>
+			</td>
+			<td>
+			<button class="sarbtn" onclick="window.location.href='shaders/Screenshot.ini'"><i class="fa fa-download"></i> Screenshot</button>
+			</td>
+			<td>
+			<button class="sarbtn" onclick="window.location.href='shaders/Cinema.ini'"><i class="fa fa-download"></i> Cinema</button>
+			</td>
+		</tr>
+	</table>
 	
-	<tr>
-		<td>
-		<button class="sarbtn" onclick="window.location.href='shaders/Screenshot.ini'"><i class="fa fa-download"></i> Screenshot</button>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>
-		<button class="sarbtn" onclick="window.location.href='shaders/Cinema.ini'"><i class="fa fa-download"></i> Cinema</button>
-		</td>
-	</tr>
-</table>
-
-<h1>Symbol Arts</h1>
-<p>For when SEGA re-releases SAs again.</p>
-<table>
-  
-	<tr>
-		<td><img src="symbolarts/mario_anime/speedmario.png" class="img-responsive" width="100%" alt=""></td><td>
-		<h2>Speedrunner Mario Anime</h2>
-		<p>Original artwork from <a href="https://www.youtube.com/user/TerminalMontage">Terminal Montage</a></p>
-		<button class="sarbtn" onclick="window.location.href='symbolarts/mario_anime/speedmario.sar'"><i class="fa fa-download"></i> Download SA</button>
-		<p>&#128162; <a href="symbolarts/mario_anime/speedmario.saml" download="speedrunnermario">Project File (.saml)</a></p>
-		</td>
-	</tr>
-
-  <tr>
-    <td><img src="symbolarts/silence_brand/silence_brand.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>silence, brand</h2>
-	<p>Original Artwork by the Internet.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/silence_brand/silence_brand.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/silence_brand/silence_brand.saml" download="no_free_will">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/serena_hiya/serena_hiya.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Serena says hello in french</h2>
-	<p>Original artwork by <a href="https://danbooru.donmai.us/posts/1507411">shuri</a> (only link I found was danbooru, any help?)</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/serena_hiya/serena_hiya.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/serena_hiya/serena_hiya.saml" download="serena_hiya">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/pecorine_nice/pecorine_nice.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Pecorine: "Nice!"</h2>
-	<p>Original artwork by <a href="https://www.pixiv.net/en/artworks/82820742">gamuo</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/pecorine_nice/pecorine_nice.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/pecorine_nice/pecorine_nice.saml" download="pecorine_nice">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/palutena_pout/palutena_pout.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Palutena pouting</h2>
-	<p>Original artwork by <a href="https://twitter.com/karkan3/status/1076051217665552385">karkan3</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/palutena_pout/palutena_pout.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/palutena_pout/palutena_pout.saml" download="palutena_pout">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/alice_crying/alice_crying.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Alice Crying</h2>
-	<p>Original artwork by <a href="https://danbooru.donmai.us/posts/1326916">yukiwo</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/alice_crying/alice_crying.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/alice_crying/alice_crying.saml" download="alice_crying">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/silence_brand/silence_bot.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>silence, bot</h2>
-	<p>Original Artwork by the Internet.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/silence_brand/silence_bot.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/silence_brand/silence_bot.saml" download="no_free_will">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/dante_jackfrost/dante_jackfrost.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Dante and Jack Frost</h2>
-	<p>Original artwork by <a href="https://twitter.com/i/web/status/1052876157060669440">pspsno_pan</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/dante_jackfrost/dante_jackfrost.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/dante_jackfrost/dante_jackfrost.saml" download="dante_jackfrost">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/no_free_will/no_free_will.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>A striking line from MGS2</h2>
-	<p>Originally a line from the game Metal Gear Solid 2.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/no_free_will/no_free_will.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/no_free_will/no_free_will.saml" download="no_free_will">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/chargemanken_aeugh/chargemanken_aeugh.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Chargeman Ken loses</h2>
-	<p>Original artwork from the show Chargeman Ken <a href="https://www.youtube.com/watch?v=uczvIKDcnS4">(here's a good review)</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/chargemanken_aeugh/chargemanken_aeugh.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/chargemanken_aeugh/chargemanken_aeugh.saml" download="chargemanken_aeugh">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/speedracer_wins/speedracer_wins.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Speed wins!</h2>
-	<p>Original artwork from the show Speed Racer <a href="https://www.youtube.com/watch?v=WC0YAJR6xQQ">(the clip in question)</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/speedracer_wins/speedracer_wins.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/speedracer_wins/speedracer_wins.saml" download="speedracer_wins">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/dva_pewpew/dva_pewpew.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>D.Va Pew Pew</h2>
-	<p>Original artwork by <a href="https://www.deviantart.com/kelly01/art/D-VA-k3lly-611090504">k3lly</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/dva_pewpew/dva_pewpew.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/dva_pewpew/dva_pewpew.saml" download="dva_pewpew">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/terminalmontage_mario/terminalmontage_mario.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Speedrunner Mario</h2>
-	<p>Original artwork from <a href="https://www.youtube.com/user/TerminalMontage">Terminal Montage</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/terminalmontage_mario/terminalmontage_mario.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/terminalmontage_mario/terminalmontage_mario.saml" download="terminalmontage_mario">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/changedaworld/changedaworld.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>change da world</h2>
-	<p>Original artwork from the Internet</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/changedaworld/changedaworld.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/changedaworld/changedaworld.saml" download="changedaworld">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/dva_confused/dva_confused.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Confused D.Va</h2>
-	<p>Original artwork by... eurgh... I only found this on Pinterest. Any help?</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/dva_confused/dva_confused.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/dva_confused/dva_confused.saml" download="dva_confused">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/eggman_announcement/eggman_announcement.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>I HAVE AN ANNOUNCEMENT TO MAKE</h2>
-	<p>Original scene from Sonic Adventure 2 <a href="https://www.youtube.com/watch?v=IMC0uZY2iH0">(but the SA is referring to this famous video)</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/eggman_announcement/eggman_announcement.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/eggman_announcement/eggman_announcement.saml" download="eggman_announcement">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/peach_sweet/peach_sweet.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>SSBM Peach</h2>
-	<p>Original artwork by <a href="https://www.deviantart.com/moxie2d/art/Day-13-Armada-526796783">moxie2D</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/peach_sweet/peach_sweet.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/peach_sweet/peach_sweet.saml" download="peach_sweet">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/emoji_laughingcryingopem/emoji_laughingcryingopem.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>WHEEZE</h2>
-	<p>Emoji abuse is the bane of my existance.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/emoji_laughingcryingopem/emoji_laughingcryingopem.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/emoji_laughingcryingopem/emoji_laughingcryingopem.saml" download="emoji_laughingcryingopem">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/extra_thicc/extra_thicc.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>EXTRA THICC</h2>
-	<p>Original source is from Samurai Jack.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/extra_thicc/extra_thicc.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/extra_thicc/extra_thicc.saml" download="extra_thicc">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/femvergil_motivatedA/femvergil_motivatedA.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Now... I'm motivated! (Female Vergil edition)</h2>
-	<p>Original artwork by <a href="https://www.pixiv.net/en/artworks/49122515">fuka (kirrier.k)</a></p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/femvergil_motivatedA/femvergil_motivatedA.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/femvergil_motivatedA/femvergil_motivatedA.saml" download="femvergil_motivatedA">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/formidable_ok/formidable_ok.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Formidable (Azur Lane)</h2>
-	<p>Original artwork by <a href="https://twitter.com/i/web/status/1279789024043925505">gomashio_ponz</a>. Ran out of symbols, and original artwork is still leagues better than my port.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/formidable_ok/formidable_ok.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/formidable_ok/formidable_ok.saml" download="formidable_ok">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/win10_bsod/win10_bsod.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Windows 10 BSOD</h2>
-	<p>Based off the Windows 10 BSOD.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/win10_bsod/win10_bsod.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/win10_bsod/win10_bsod.saml" download="win10_bsod">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/man_of_culture/man_of_culture.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Ah, I see you're a man of culture as well.</h2>
-	<p>Originally from an anime.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/man_of_culture/man_of_culture.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/man_of_culture/man_of_culture.saml" download="man_of_culture">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/mercy_gonnagoheal/mercy_gonnagoheal.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Mercy is tired</h2>
-	<p>Original artwork by... uhm... I found this on a YT thumbnail. Help?</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/mercy_gonnagoheal/mercy_gonnagoheal.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/mercy_gonnagoheal/mercy_gonnagoheal.saml" download="mercy_gonnagoheal">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/mgs_codec/mgs_codec.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>MGS Codec Template</h2>
-	<p>Originally from Metal Gear Solid.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/mgs_codec/mgs_codec.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/mgs_codec/mgs_codec.saml" download="mgs_codec">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/mspaint_thinking_emoji/mspaint_thinking_emoji.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Thinking Emoji (MS Paint edition)</h2>
-	<p>A meme born from the Internet</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/mspaint_thinking_emoji/mspaint_thinking_emoji.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/mspaint_thinking_emoji/mspaint_thinking_emoji.saml" download="mspaint_thinking_emoji">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/vmu_corrupted/vmu_corrupted.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>VMU Corruption</h2>
-	<p>Based off the Dreamcast UI.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/vmu_corrupted/vmu_corrupted.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/vmu_corrupted/vmu_corrupted.saml" download="vmu_corrupted">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/tf2_foolishpeasant/tf2_foolishpeasant.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Foolish peasant</h2>
-	<p>Based off an artwork piece for an update of Team Fortress 2.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/tf2_foolishpeasant/tf2_foolishpeasant.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/tf2_foolishpeasant/tf2_foolishpeasant.saml" download="tf2_foolishpeasant">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/one_eternity_later/one_eternity_later.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>One Eternity Later...</h2>
-	<p>Originally from the show Sponge Bob.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/one_eternity_later/one_eternity_later.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/one_eternity_later/one_eternity_later.saml" download="one_eternity_later">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/star_didnt_try/star_didnt_try.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>You didn't even try</h2>
-	<p>Welp</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/star_didnt_try/star_didnt_try.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/star_didnt_try/star_didnt_try.saml" download="star_didnt_try">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/notice_sa_acquisition/notice_sa_acquisition.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>SA Acquisition Notice</h2>
-	<p>Based off the Meme Acquisition Notice meme.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/notice_sa_acquisition/notice_sa_acquisition.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/notice_sa_acquisition/notice_sa_acquisition.saml" download="notice_sa_acquisition">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/surprised_pikaface/surprised_pikaface.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>Another Surprised Pikachu Face</h2>
-	<p>A bit lackluster and I found way better ones on Ship 2. I was lazy. :)</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/surprised_pikaface/surprised_pikaface.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/surprised_pikaface/surprised_pikaface.saml" download="surprised_pikaface">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/tf2_nope/tf2_nope.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>nope.avi</h2>
-	<p>First SA I made, don't @ me.</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/tf2_nope/tf2_nope.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/tf2_nope/tf2_nope.saml" download="tf2_nope">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-  <tr>
-    <td><img src="symbolarts/star_you_tried/star_you_tried.png" class="img-responsive" width="100%" alt=""></td><td>
-	<h2>You tried</h2>
-	<p>Fine</p>
-	<button class="sarbtn" onclick="window.location.href='symbolarts/star_you_tried/star_you_tried.sar'"><i class="fa fa-download"></i> Download SA</button>
-	<p>&#128162; <a href="symbolarts/star_you_tried/star_you_tried.saml" download="star_you_tried">Project File (.saml)</a></p>
-	</td>
-  </tr>
-  
-</table>
 </div>
 
 
