@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form * {
+  display: block;
+  margin: 10px;
+}
+</style>
+<script language="Javascript" >
+function download(filename, text) {
+  var pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
+
+encodeURIComponent(text));
+  pom.setAttribute('download', filename);
+
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+</script>
+</head>
+<body>
+
+<!-- Code by w3codegenerator.com -->
+<form class="generated-form"  method="GET" action="submit.php"  target="_self">
+<fieldset>
+  <legend> Character </legend>
+   <label for="name">Name (shown in game):</label>
+   <input type="text" id="name" name="name"><br>
+   
+   
+   <label for="image">Image Filename:</label>
+   <input type="text" id="image" name="image"><br>
+   
+    <legend> Shows up in the following trials </legend>
+	   <input type="checkbox" id="tutorial_guest" name="tutorial_guest" value="tutorial_guest">
+	   <label for="tutorial_guest"> GAME START ||| Tutorial Guest</label><br>
+	
+	   <input type="checkbox" id="foodshop" name="foodshop" value="foodshop">
+	   <label for="foodshop"> TRIAL: FOODSHOP ||| Food Shop Owner</label><br>
+	   
+	   
+   <label for="chat">Chat Window Color</label>
+   <select id="chat">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+   </select> <br>
+   
+   <label for="voice">Voice Sounds</label>
+   <select id="voice">
+      <option value="high_beep">High-Pitched</option>
+      <option value="mid_beep">Mid-Pitched</option>
+      <option value="low_beep">Low-Pitched</option>
+   </select> <br>
+   
+</fieldset>
+</form>
+
+<form onsubmit="download(this['name'].value, this['text'].value)">
+  <input type="text" name="name" value="test.txt">
+  <textarea rows=3 cols=50 name="text">Please type in this box. When you 
+
+click the Download button, the contents of this box will be downloaded to 
+
+your machine at the location you specify. Pretty nifty. </textarea>
+  <input type="submit" value="Download">
+</form>
+</body>
+</html>
