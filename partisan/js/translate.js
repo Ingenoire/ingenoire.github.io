@@ -1,158 +1,33 @@
 var dictionary = {
-        'scion': 
-		{
-            'na': 'scion',
-            'jp': 'successor',
-        },
-		'translate': 
+        'translate': 
 		{
             'na': 'Switch to JP terms',
             'jp': 'Switch to NA terms',
         },
-		'Perfect Attack': 
+		'partisan': 
 		{
-            'na': 'Perfect Attack',
-            'jp': 'Just Attack',
+            'na': 'Partisan',
+            'jp': 'Partizan',
         },
-		'30% of your HP': 
+		'Cleaving Scythe': 
 		{
-            'na': '30% of your HP',
-            'jp': '20% of your HP',
+            'na': 'Cleaving Scythe',
+            'jp': 'Scythe Ripper (サイズリッパー)',
         },
-		'focus': 
+		'Thrusting Javelin': 
 		{
-            'na': 'focus',
-            'jp': 'gear',
+            'na': 'Thrusting Javelin',
+            'jp': 'Stab Javelin (スタッブジャベリン)',
         },
-		'Heroic Boost': 
+		'Fatal Tornado': 
 		{
-            'na': 'Heroic Boost',
-            'jp': 'Hero Boost',
+            'na': 'Fatal Tornado',
+            'jp': 'Fatal Tornado (フェイタルトルネード)',
         },
-		'60% attack boost': 
+		'Triumphant Shift': 
 		{
-            'na': '60% attack boost',
-            'jp': '80% attack boost',
-        },
-		'Bulletblitz': 
-		{
-            'na': 'Bulletblitz',
-            'jp': 'Vapor Bullet',
-        },
-		'Sleightshot Gambit': 
-		{
-            'na': 'Sleightshot Gambit',
-            'jp': 'Moment Trick',
-        },
-		'Edgeracer Gambit': 
-		{
-            'na': 'Edgeracer Gambit',
-            'jp': 'Racer Edge',
-        },
-		'Houndblade': 
-		{
-            'na': 'Houndblade',
-            'jp': 'Wise Hound',
-        },
-		'Focus': 
-		{
-            'na': 'Focus',
-            'jp': 'Gear',
-        },
-		'Starfire Squall': 
-		{
-            'na': 'Starfire Squall',
-            'jp': 'Brand New Star',
-        },
-		'Sleightshot Gambit': 
-		{
-            'na': 'Sleightshot Gambit',
-            'jp': 'Moment Trick',
-        },
-		'Hero Encore Jump': 
-		{
-            'na': 'Hero Encore Jump',
-            'jp': 'One More Jump',
-        },
-		'Brightblade Buster': 
-		{
-            'na': 'Brightblade Buster',
-            'jp': 'Brightness End',
-        },
-		'60%': 
-		{
-            'na': '60%',
-            'jp': '80%',
-        },
-		'Atomizer Fanatic': 
-		{
-            'na': 'Atomizer Fanatic',
-            'jp': 'Atomizer Lovers',
-        },
-		'Mate Maniac': 
-		{
-            'na': 'Mate Maniac',
-            'jp': 'Mate Lovers',
-        },
-		'Party Toughness': 
-		{
-            'na': 'Party Toughness',
-            'jp': 'Party Of Toughness',
-        },
-		'Leaping Dodge': 
-		{
-            'na': 'Leaping Dodge',
-            'jp': 'Jumping Dodge',
-        },
-		'Mag Excitement': 
-		{
-            'na': 'Mag Excitement',
-            'jp': 'Mag Excite',
-        },
-		'Perfectionist': 
-		{
-            'na': 'Perfectionist',
-            'jp': 'P-Keeper',
-        },
-		'Critical Strike': 
-		{
-            'na': 'Critical Strike',
-            'jp': 'C-Strike',
-        },
-		'Voelkermord': 
-		{
-            'na': 'Massenvernichtungs',
-            'jp': 'Voelkermord',
-        },
-		'Folterzeit': 
-		{
-            'na': 'Folterzeit',
-            'jp': 'Folter Zeit',
-        },
-		'Phantom Lock-On Bomb': 
-		{
-            'na': 'Phantom Lock-On Bomb',
-            'jp': 'Phantom Lock-On Bomb',
-        },
-		'Shifted Nachtangriff': 
-		{
-            'na': 'Shifted Nachtangriff',
-            'jp': 'Shifted Nachtangriff',
-        },
-		'Soaring Blades': 
-		{
-            'na': 'Soaring Blades',
-            'jp': 'Dual Blades',
-        },
-		'Black Hole Rapture': 
-		{
-            'na': 'Black Hole Rapture',
-            'jp': 'Black Hole Rupture',
-        },
-		'techter': 
-		{
-            'na': 'techter',
-            'jp': 'techer',
+            'na': 'Triumphant Shift',
+            'jp': 'Triumphant Shift',
         }
 };
 var langs = ['na', 'jp'];
