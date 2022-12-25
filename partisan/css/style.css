@@ -9,6 +9,7 @@ body {
 	background-color: #F0EEEE;
 }
 
+
 .cardbody {
 	background-color: #e0e0e0;
 }
@@ -125,6 +126,11 @@ html {
 
 .barintro {
 	background-color: #4874C0;
+}
+
+
+wep-img {
+	float: left;
 }
 
 
