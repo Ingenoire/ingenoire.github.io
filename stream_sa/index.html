@@ -1,242 +1,106 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Grid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0 15%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+    .header {
+      text-align: center;
+      padding: 20px 0;
+    }
 
-body {
-	margin:25px;
-	font-family: 'Barlow';
-	font-size: 22px;
-}
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 100%;
+      margin-top: 20px;
+    }
 
-img {
-  width: auto;
-}
+    .grid-item {
+      text-align: center;
+    }
 
-div.polahead {
-  text-align: center;
-  padding: 1px 16px;
-}
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+    }
 
-div.polaroidcontainer {
-  text-align: center;
-  padding: 8px 20px;
-}
-
-.content {
-  margin: auto;
-  width: 70%;
-  padding: 10px;
-}
-
-.heading {
-  margin: auto;
-  width: 70%;
-  padding: 10px;
-}
-
-.imgheading {
-  margin: auto;
-  width: 100%;
-  padding: 10px;
-}
-
-.midheading {
-  margin: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  width: 70%;
-  padding: 4px;
-}
-
-.footing {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
-.charadata {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  height: 50%;
-  width: 50%;
-}
-
-.sarbtn {
-  background-color:#306EFF;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-	font-family: 'Barlow';
-  padding: 18px 10px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.prjbtn {
-  background-color:#488AC7;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  padding: 20px 10px;
-	font-family: 'Barlow';
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/* Darker background on mouse-over */
-.sarbtn:hover {
-  background-color:#003CCD;
-}
-
-/* Darker background on mouse-over */
-.prjbtn:hover {
-  background-color:#165895;
-}
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-}
-
-td, th {
-  text-align: left;
-  padding: 12px 16px;
-	font-family: 'Barlow';
-}
-
-.charaimg {
-	text-align: right;
-	height: 50%;
-}
-
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-/* Gallery */
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-</style>
+    .grid-item p {
+      margin: 10px 0 0;
+    }
+  </style>
 </head>
-
 <body>
-
-<div class="content">
-	
-	<h1>Stream Symbol Arts</h1>
-	<div class="clearfix"></div>
-	<div class="footing">
-	<footer>
-	Write these in chat without any other symbols.<br><br>Write <b>toge</b> in front of your words in chat to have an emphasis bubble. 
-	</footer>
-	</div>
-
-	<div style="padding:6px;">
-	
-	<table>
-		<tr><td>
-			<div class="gallery"><img src="areyawin.png"><h3>SAareyawin</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="quunaaa.png"><h3>SAqunafan</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="culture.png"><h3>SAculture</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="bonjour.png"><h3>SAbonjour</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="youtried.png"><h3>SAyoutried</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="matoismile.png"><h3>SAmatoismile</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="erp.png"><h3>SAerp</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="opinion.png"><h3>SAopinion</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="qunasus.png"><h3>SAqunasus</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="laugh.png"><h3>SAlaugh</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="croissant.png"><h3>SAcroissant</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="thicc.png"><h3>SAthicc</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="gallery"><img src="dudu.png"><h3>SAdudu</h3></div>
-			<div style="padding:6px;">
-			
-			<div class="clearfix"></div>
-
-			<div style="padding:6px;">
-		</td></tr>
-	</table>
-
-
-
+  <div class="header">
+    <h1>Usable Symbol Arts on ingenoire's stream</h1>
+  </div>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="quunaaa.png">
+      <p>SAqunafan</p>
+    </div>
+    <div class="grid-item">
+      <img src="areyawin.png">
+      <p>SAareyawin</p>
+    </div>
+    <div class="grid-item">
+      <img src="culture.png">
+      <p>SAculture</p>
+    </div>
+    <div class="grid-item">
+      <img src="bonjour.png">
+      <p>SAbonjour</p>
+    </div>
+    <div class="grid-item">
+      <img src="youtried.png">
+      <p>SAyoutried</p>
+    </div>
+    <div class="grid-item">
+      <img src="matoismile.png">
+      <p>SAmatoismile</p>
+    </div>
+    <div class="grid-item">
+      <img src="erp.png">
+      <p>SAerp</p>
+    </div>
+    <div class="grid-item">
+      <img src="opinion.png">
+      <p>SAopinion</p>
+    </div>
+    <div class="grid-item">
+      <img src="qunasus.png">
+      <p>SAqunasus</p>
+    </div>
+    <div class="grid-item">
+      <img src="laugh.png">
+      <p>SAlaugh</p>
+    </div>
+    <div class="grid-item">
+      <img src="croissant.png">
+      <p>SAcroissant</p>
+    </div>
+    <div class="grid-item">
+      <img src="dudu.png">
+      <p>SAdudu</p>
+    </div>
+    <div class="grid-item">
+      <img src="booba.gif">
+      <p>SAbooba</p>
+    </div>
+    <!-- Add more grid items as needed -->
+  </div>
 </body>
-  
 </html>
